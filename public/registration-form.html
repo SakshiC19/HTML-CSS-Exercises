@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(239, 233, 233);
+        }
+        form{
+            background-color: white;
+            padding:20px;
+            border:1px solid gray;
+            box-shadow:2px 2px 2px black;
+            margin-top: 20px;
+            border-radius:10px;
+            font-family:Arial;
+        }
+        .form-title{
+            font-weight:bold;
+            margin-bottom:20px;
+            font-size:20px;
+        }
+        .form-field{
+            margin-bottom:30px;
+        }
+        .form-label{
+            margin-bottom:5px;
+            font-weight:bold;
+            display:block;
+            font-size:16px;
+        }
+        .form-control{
+            width:100%;
+            font-size:16px;
+            height:25px;
+            margin-bottom:5px;
+        }
+        .form-error{
+            font-size:12px;
+            color:red;
+        }
+        .btn-register{
+            font-size:18px;
+            padding:10px;
+            width:100%;
+            border:none;
+            border-radius: 30px;
+            background-color: rgb(239, 200, 3);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-title bi bi-person-circle"> Sign in or Create Account</div>
+        <div class="form-field">
+            <label  for="UserName" class="form-label">User Name</label>
+           <div>
+                <input type="text" placeholder="Your Name" class="form-control" name="UserName">
+                <div class="form-error">User Name Required</div>
+           </div>
+        </div>
+        <div class="form-field">
+            <label  for="Password" class="form-label">Password</label>
+           <div>
+                <input type="password" placeholder="Your Password" class="form-control" name="Password">
+                <div class="form-error">4 to 15 one special char required </div>
+           </div>
+        </div>
+        <div class="form-field">
+            <label  for="Gender" class="form-label">Gender</label>
+           <div>
+                <input type="radio" name="Gender" value="Male"><label for="Gender">Male</label>
+                <input type="radio" name="Gender" value="Female"><label for="Gender">Female</label>
+                <div class="form-error">Please select gender</div>
+           </div>
+        </div>
+        <div class="form-field">
+            <label  for="City" class="form-label">Your City</label>
+           <div>
+                <select class="form-control">
+                    <option>Select City</option>
+                    <option>Delhi</option>
+                    <option>Kolhapur</option>
+                </select>
+                <div class="form-error">Please select your city</div>
+           </div>
+        </div>
+        <div class="form-field">
+            <button class="btn-register">Register</button>
+        </div>
+    </form>
+</body>
+</html>
